@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List Express</title>
+</head>
+<body>
+    <div id="container">
+        <h1>To-Do List 
+            
+        </h1> 
+        <form action="/addTask" method="post">
+            <input id="inputToDo" type="text" placeholder="Add Your Tasks" name="task">
+            <button id="addItem" type="submit">Add</button>
+        </form>
+        
+        <ul id="ulForItems">
+
+            <% for(var i=0; i<tasks.length; i++) {%>
+                <% let lineThrough = tasks[i].completed ? 'line-through' : 'none' %>
+                <li >
+                  <span style='text-decoration: <%= lineThrough %> '><%= tasks[i].task %></span>
+                  <span class="complete"> Complete </span>
+                </li>
+              <% } %>
+
+        </ul>
+        <button class="delete">Clear All Tasks</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+    font-family: Roboto;
+    background-image: url(./flower.bg.avif);
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    background: #a7798f;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.fa-plus {
+    float: right
+}
+
+li {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666
+}
+
+li:nth-child(2n) {
+    background: #f7f7f7
+}
+
+h1>button{
+    margin-left: 44%;
+    height: 30px;
+}
+
+/* span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0
+} */
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0
+}
+
+input {
+    font-size: 18px;
+    color: #b98ea9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0)
+}
+
+input:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+.crossout{
+    text-decoration: line-through;
+}
+
+#inputToDo { 
+    text-align: center;
+}
+
+#addItem { 
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #8d6e80;
+    border-color: #d9d9d9;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    :hover {
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+
+
+
+    
+}
+
+.delete { 
+
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #8d6e80;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    :hover {
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+
+}
